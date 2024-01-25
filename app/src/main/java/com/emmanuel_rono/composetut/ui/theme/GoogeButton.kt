@@ -1,10 +1,10 @@
 package com.emmanuel_rono.composetut.ui.theme
 
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.LinearOutSlowInEasing
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -26,11 +26,28 @@ var clicked by remember { mutableStateOf(false) }
         border= BorderStroke(width = 1.dp, color = Color.LightGray),
         color=MaterialTheme.colors.surface
     ) {
+        Column(Modifier.fillMaxSize())
+        {
+
         Row(
             modifier = Modifier
-                .padding(12.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
+                .padding(
+                    start = 12.dp,
+                    end = 16.dp,
+                    top = 12.dp,
+                    bottom = 12.dp
+                )
+                .animateContentSize(
+                    animationSpec = tween(
+                        durationMillis = 300,
+                        easing = LinearOutSlowInEasing
+                    )
+
+                ),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+
+        ){
 
             Icon(
                 painter = painterResource(id = R.drawable.ic_google_logo),
@@ -41,4 +58,4 @@ var clicked by remember { mutableStateOf(false) }
 
         }
     }
-}
+}}
