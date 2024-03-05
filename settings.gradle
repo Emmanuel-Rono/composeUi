@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "composeTut"
+rootProject.name = "OnBoardingCompose"
 include ':app'

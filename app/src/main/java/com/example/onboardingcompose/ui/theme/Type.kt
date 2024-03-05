@@ -1,4 +1,4 @@
-package com.emmanuel_rono.composetut.ui.theme
+package com.example.onboardingcompose.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

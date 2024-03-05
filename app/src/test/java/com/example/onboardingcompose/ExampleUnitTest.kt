@@ -1,4 +1,4 @@
-package com.emmanuel_rono.composetut
+package com.example.onboardingcompose
 
 import org.junit.Test
 

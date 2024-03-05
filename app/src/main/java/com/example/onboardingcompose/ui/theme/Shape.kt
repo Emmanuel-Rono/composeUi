@@ -1,4 +1,4 @@
-package com.emmanuel_rono.composetut.ui.theme
+package com.example.onboardingcompose.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
